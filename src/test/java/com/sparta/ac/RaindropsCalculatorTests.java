@@ -20,6 +20,7 @@ public class RaindropsCalculatorTests {
         @DisplayName("Check factorCalculator returns correct factors of 1")
         void checkCorrectFactorsOf1Returned() {
             ArrayList<Integer> expectedResult = new ArrayList<>(Arrays.asList(1));
+            Assertions.assertTrue(RaindropsCalculatorHelperMethods.checkAllElementsAreDivisible(1));
             Assertions.assertEquals(expectedResult, RaindropsCalculatorHelperMethods.getFactorCalculatorResult(1));
         }
 
