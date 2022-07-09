@@ -38,7 +38,7 @@ Factors of 34 are 1, 2, 17, and 34. As the factors of 34 do not include 3, 5 or 
     }
 ```
 
-*raindropsStringBuilder* method takes the given number and parses it to the *factorCalculator*, only if it is greater than 0. It then checks the resulting array of factors for the relevant numbers and builds a string based on the corresponding words. If the given number is less than 0 the program will output 'Cannot factor this number'.
+*raindropsStringBuilder* method takes the given number and parses it to the *factorCalculator*, only if it is greater than 0. It then checks the resulting array of factors for the relevant numbers and builds a string based on the corresponding words. If the given number is 0 or less, the program will output 'Cannot factor this number'.
 
 ```java
 public static String raindropsStringBuilder(int numToFactor) {
