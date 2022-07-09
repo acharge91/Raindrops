@@ -67,3 +67,18 @@ public static String raindropsStringBuilder(int numToFactor) {
 The program includes a test file containing unit tests for the *RaindropsCalculator* class, that also makes use of some helper methods.
 
 The tests cover all available outputs whilst also testing for the handling of numbers 0 or less. It also tests the *factorCalculator* method to ensure correct factors are returned.
+
+---
+
+## Dependencies
+
+- JUnit 5
+
+```java
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+```
