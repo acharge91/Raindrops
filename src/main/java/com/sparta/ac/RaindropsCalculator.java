@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class RaindropsCalculator {
 
     public static String raindropsStringBuilder(int numToFactor) {
+
         if (numToFactor > 0) {
             ArrayList<Integer> factorArray = new ArrayList<>();
             factorCalculator(numToFactor, numToFactor, factorArray);
-
 
             String returnString = "";
             if (factorArray.contains(3)) returnString += "Pling";

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -13,7 +14,7 @@ public class RaindropsCalculatorTests {
 
     @Nested
     @DisplayName("factoryCalculator tests")
-    public class factoryCalculatorTests {
+    public class factorCalculatorTests {
 
 
         @Test
@@ -60,7 +61,6 @@ public class RaindropsCalculatorTests {
         @DisplayName("Check factorCalculator returns empty array for factors of 0")
         void check0ReturnsEmptyArray() {
             ArrayList<Integer> expectedResult = new ArrayList<>();
-            Assertions.assertFalse(RaindropsCalculatorHelperMethods.checkAllElementsAreDivisible(0));
             Assertions.assertEquals(expectedResult, RaindropsCalculatorHelperMethods.getFactorCalculatorResult(0));
         }
 
@@ -163,6 +163,18 @@ public class RaindropsCalculatorTests {
         @DisplayName("Check raindropsStringBuilder returns 'PlingPlangPlong' for 735")
         void check735ReturnsPlingPlangPlong() {
             Assertions.assertEquals("PlingPlangPlong", RaindropsCalculator.raindropsStringBuilder(735));
+        }
+
+        @Test
+        @DisplayName("Check raindropsStringBuilder returns 2 for 2")
+        void check2Returns2() {
+            Assertions.assertEquals("2", RaindropsCalculator.raindropsStringBuilder(2));
+        }
+
+        @Test
+        @DisplayName("Check raindropsStringBuilder returns 92 for 92")
+        void check92Returns92() {
+            Assertions.assertEquals("92", RaindropsCalculator.raindropsStringBuilder(92));
         }
 
     }
