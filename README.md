@@ -9,7 +9,7 @@ Raindrops is an algorithmic program that takes in an integer and returns a strin
 - *Pling* - if the given number has a factor of 3.
 - *Plang* - if the given number has a factor of 5.
 - *Plong* - if the given number has a factor of 7.
-- If the given numbers' factors do not include any of the above then the program wll output the given number.
+- If the given numbers' factors do not include any of the above then the program will output the given number.
 
 **Examples:**
 
@@ -64,7 +64,7 @@ public static String raindropsStringBuilder(int numToFactor) {
 
 ## Testing
 
-The program includes a test file containing unit tests for the *RaindropsCalculator* class, that also makes use of some helper methods.
+The program includes a test file containing unit tests for the *RaindropsCalculator* class, which also makes use of some helper methods.
 
 The tests cover all available outputs whilst also testing for the handling of numbers 0 or less. It also tests the *factorCalculator* method to ensure correct factors are returned.
 

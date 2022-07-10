@@ -20,7 +20,6 @@ public class RaindropsCalculator {
         } else {
             return "Cannot factor this number";
         }
-
     }
 
     public static void factorCalculator(int numToFactor, int numIncrements, ArrayList<Integer> factorArray) {
